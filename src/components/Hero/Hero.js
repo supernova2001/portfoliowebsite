@@ -27,16 +27,15 @@ function Hero() {
       <Header toggle={toggle} />
       <HeroContainer>
         <HeroWrapper>
-          <HeroLeft>
             <ScrollAnimation animateIn="fadeIn" >
               <TypeAnimation
                 cursor={false}
                 sequence={[
-                  'This is Janakiram Sharma.',
+                  'Hey! This is Janakiram Sharma.',
                   () => setShowSubtitle(true)
                 ]}
                 speed={{ type: "keyStrokeDelayInMs", value: 150 }}
-                wrapper="h1"
+                wrapper="h3"
                 repeat={0}
               />
               {showSubtitle &&
@@ -44,11 +43,11 @@ function Hero() {
                   cursor={true}
                   sequence={[
                     500,
-                    'Pursuing Masters in Computer Science from Indiana University, Bloomington',
+                    'Software Engineer',
                     1000,
-                    'A Software Engineer.',
+                    'Data Enthusiast',
                     1000,
-                    'A Data Enthusiast.',
+                    'Looking for opportunities to intensify my skills and gain expertise in the Software field.',
                   ]}
                   speed={50}
                   deletionSpeed={65}
@@ -58,16 +57,6 @@ function Hero() {
                 />
               }
             </ScrollAnimation>
-
-          </HeroLeft>
-          <HeroRight>
-            <ScrollAnimation animateIn="fadeIn">
-              <Image
-                src="/profileimage.jpg"
-                alt="man-svgrepo"
-              />
-            </ScrollAnimation>
-          </HeroRight>
         </HeroWrapper>
         {showScrollDown &&<ScrollAnimation animateIn="flipInX" offset={0}>
         <ScrollDown to="projects" id="scrollDown">

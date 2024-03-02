@@ -32,6 +32,42 @@ export const HeroWrapper = styled.div`
   @media screen and (max-width: 992px) {
     flex-direction: column;
   }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  flex: 1;
+
+  h3 {
+    font-size: 2.0rem;
+    color: #f6f6f6;
+    opacity: 0.98;
+    font-weight: 400;
+  }
+
+  h6 {
+    font-size: 0.9rem;
+    color: rgb(119, 119, 121);
+    margin-bottom: 1.6rem;
+    font-weight: 400;
+  }
+
+  p {
+    font-size: 17px;
+    color: #f6f6f6;
+    opacity: 0.85;
+  }
+
+  @media screen and (max-width: 992px) {
+    text-align: center;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    h5 {
+      min-height: 5rem;
+  }
 `;
 
 export const HeroLeft = styled.div`
@@ -42,17 +78,17 @@ export const HeroLeft = styled.div`
   text-align: left;
   flex: 1;
 
-  h1 {
-    font-size: 2.8rem;
+  h3 {
+    font-size: 2.0rem;
     color: #f6f6f6;
     opacity: 0.98;
     font-weight: 400;
   }
 
   h5 {
-    font-size: 1.6rem;
+    font-size: 2.4rem;
     color: rgb(119, 119, 121);
-    margin-bottom: 1rem;
+    margin-bottom: 1.6rem;
     font-weight: 400;
   }
 

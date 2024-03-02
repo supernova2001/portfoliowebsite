@@ -1,5 +1,6 @@
 import React from "react";
 import { stackList } from "../../data/ProjectData";
+import { MdSearch, MdSchool } from 'react-icons/md';
 import {
   Technologies,
   Tech,
@@ -11,12 +12,16 @@ import ScrollAnimation from "react-animate-on-scroll";
 function About() {
   return (
     <ContactWrapper id="about">
+      <marquee id="openforpositions" scrollamount="5"><MdSchool></MdSchool> Pursuing <b style={{color: '#990000'}}>Masters in Computer Science</b> from Indiana University, Bloomington. | <MdSearch></MdSearch> Looking for <b style={{color: '#990000'}}>internship</b> and <b style={{color: "#990000"}}>full-time</b> opportunities in the field of Software Development and Data Science.</marquee>
+      <hr></hr>
       <div className="Container">
-        <div className="SectionTitle">About Me</div>
+        <div className="SectionTitle" style={{marginTop: "40px"}}>About Me</div>
         <div className="BigCard">
         <ScrollAnimation animateIn="fadeInLeft">
         </ScrollAnimation>
           <div className="AboutBio">
+            <img src="profile image.jpg" style={{width: "40%", height: "40%", display: "table", margin: "auto"}}></img>
+            <br></br>
             <ScrollAnimation animateIn="fadeInLeft">
             Hello! This is <strong>Janakiram Sharma Kashigari</strong>. I'm originally from India, currently living in the United States. I am pursuing my Master's in Computer Science from Indiana University, Bloomington. In total, I have 1.5 years of work experience with 1 year as a Software Engineer for Reputation.com and 6 months as a Systems Reliability Engineer Intern at Nutanix Inc.</ScrollAnimation>
 

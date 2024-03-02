@@ -25,7 +25,7 @@ const Header = ({ toggle }) => {
             href="Janakiram Sharmaa Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            onclick="window.open('Janakiram Sharmaa Resume.pdf')"
+            onclick="window.open('https://drive.google.com/file/d/11vwY0WqpLw5HjGYzlQPbskPk7nQhXfbn/view?usp=sharing')"
           >
             Resume
           </a>
